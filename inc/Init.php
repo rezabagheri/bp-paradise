@@ -7,7 +7,8 @@ final class Init
     public static function get_classes()
     {
         return [
-            Setup\Setup::class
+            Setup\Setup::class,
+            Woocommerce\Woocommerce::class
         ];
     }
 

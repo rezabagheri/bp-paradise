@@ -41,6 +41,11 @@ class Setup
             'audio',
             'chat',
         ) );
+
+        add_theme_support( 'custom-logo', array(
+            'height' => 480,
+            'width'  => 720,
+        ) );
     }
 
     public function content_width()

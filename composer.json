@@ -1,0 +1,12 @@
+{
+    "name": "reza/bp-paradise",
+    "description": "A simple Bootstrapped WordPress template",
+    "license": "GPL3",
+    "authors": [
+        {
+            "name": "reza bagheri",
+            "email": "rezabagheri@gmail.com"
+        }
+    ],
+    "require": {}
+}

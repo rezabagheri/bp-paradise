@@ -1,12 +1,16 @@
 {
     "name": "reza/bp-paradise",
-    "description": "A simple Bootstrapped WordPress template",
-    "license": "GPL3",
-    "authors": [
-        {
-            "name": "reza bagheri",
-            "email": "rezabagheri@gmail.com"
+    "description": "A Simple Bootstraped Wordpress Template( BS5 )",
+    "license": "GPL-3.0",
+    "version": "1.0.0",
+    "authors": [{
+        "name": "reza bagheri",
+        "email": "rezabagheri@gmail.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Paradise\\": "./inc"
         }
-    ],
-    "require": {}
+    }
 }

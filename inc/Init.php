@@ -8,7 +8,8 @@ final class Init
     {
         return [
             Setup\Setup::class,
-            Woocommerce\Woocommerce::class
+            Setup\Enqueue::class,
+            Woocommerce\Woocommerce::class,
         ];
     }
 

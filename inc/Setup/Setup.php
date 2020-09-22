@@ -43,11 +43,18 @@ class Setup
         ) );
 
         add_theme_support( 'custom-logo', array(
-            'height' => 480,
-            'width'  => 720,
+            'height' => 100,
+            'width'  => 220,
         ) );
     }
 
+
+    public function addThemeSupport( $support, array $args = null)
+    {
+        add_theme_support( $support, $args);
+        return $this;
+    }
+    
     public function content_width()
     {
         $GLOBALS[ 'content_width' ] = apply_filters( 'content_width', 1440 );

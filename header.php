@@ -18,7 +18,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                    <!-- <ul class="navbar-nav mr-auto mb-2 mb-md-0">
                         <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
@@ -28,7 +28,17 @@
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </li>
-                    </ul>
+                    </ul> -->
+                    <?php
+                    wp_nav_menu(
+                        [
+                            "header_menu" => "primary_menu",
+                            "container" => false,
+                            "items_wrap" => '<ul class= "navbar-nav mr-auto mb-2 mb-md-0">%3$s</ul>'
+
+                        ]
+                    );
+                    ?>
                     <form class="d-flex">
                         <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -40,12 +50,8 @@
     <header>
         <section class="site-logo">Logo</section>
         <section class="site-nav">
-            <?php
-            wp_nav_menu(
-                [
-                    "header_menu" => "primary_menu"
-                ]
-            );
-            ?>
+
         </section>
     </header>
+
+    <main>

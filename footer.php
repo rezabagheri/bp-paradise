@@ -1,15 +1,11 @@
-<footer>
-        <section class="footer-nav">
-            <nav class="footer-nav">
-            <a href="#">term and conditions</a>
-                <a href="#">About</a>
-                <a href="#" >Contact</a>
-            </nav>
-        </section>
-        <sectopn class="copyright-area">
-            Copyleft by rezo
-        </sectopn>
-    </footer>
+</main>
+<!-- FOOTER -->
+<footer class="container">
+    <p class="float-left"><a href="#">Back to top</a></p>
+    <p>&copy; 2017-2020 Ultrahypnos, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+</footer>
+
 </body>
 <?php wp_footer(); ?>
+
 </html>

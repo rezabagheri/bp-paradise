@@ -13,7 +13,8 @@ class Enqueue
     public function addStyles()
     {
         wp_enqueue_style( "theme-css", get_template_directory_uri() . "/assets/css/style.css", [], "1.0", "all" );
-        wp_enqueue_style( "theme-css1", get_template_directory_uri() . "/assets/css/bootstrap.min.css", [], "1.0", "all" );
+        wp_enqueue_style( "theme-bootstrap", get_template_directory_uri() . "/assets/css/bootstrap.min.css", [], "1.0", "all" );
+        wp_enqueue_style( "theme-carosel", get_template_directory_uri() . "/assets/css/carousel.css", [], "1.0", "all" );
     }
 
     public function addScripts()

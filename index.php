@@ -62,39 +62,12 @@
             if (have_posts()) {
                 while (have_posts()) {
                     the_post();
+                    if( is_home() )
+                        get_template_part('template-parts/post', 'card');
+                    else
+                        the_content();
             ?>
-                    <div class="col">
-                        <div class="card h-100 shadow-sm text-white">
-                            <?php
-                            if(has_post_thumbnail()) {
-                                the_post_thumbnail('thumbnail', ['class' => 'card-img', 'title' => get_the_title()]);
-                            }
-                            else
-                                {
-                                    ?>
-                                    <img src= "https://via.placeholder.com/150" class="card-img" />
-                                    
-                                    <?php
-                                }
-                            ?>
-                            <div class="card-img-overlay">
-                                <h5 class="card-title shadow">
-                                    <?php the_title(); ?>
-                                </h5>
-                            </div>
-
-                            <div class="card-body">
-                                <p class="card-text text-black-50"><?php echo get_the_excerpt();?></p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    </div>
-                                    <small class="text-muted">9 mins</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
             <?php
                 }
             }
